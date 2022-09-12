@@ -1,0 +1,304 @@
+:root{
+    --bodtxt: 'Manrope', sans-serif;
+    --blink:  'Blinker', sans-serif;
+    --basecolor: #2A5BD7;
+    --basecanva: #ffffff;
+}
+
+body{
+    margin: 0;
+}
+
+h3, h5, p, label{
+    font-family: var(--bodtxt);
+}
+header{
+    height: 100px;
+}
+
+h3, h5{
+    font-size: 24px;
+}
+nav{
+    position: fixed;
+    top: 0px;
+    background-color: var(--basecanva);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 492px;
+    padding: 0px 123px;
+    border-width: 1px;
+    border-color:  #2A5BD75E;
+    border-style: groove;
+}
+
+.mnu, #mbx, .m{
+    display: none;
+}
+
+
+
+
+h1, h2{
+    font-family: var(--blink);
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: auto;
+    display: block;
+    width: fit-content;
+    position: relative;
+}
+
+.w{
+    font-size: 32px;
+    margin-bottom: 120px;
+}
+
+footer{
+    height: 400px;
+    padding: 98px 129px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name{
+    margin: 23px auto 5px;
+}
+
+.jd{
+    font-size: 16px;
+    margin: 0px;
+}
+
+
+.navlink{
+    font-family: var(--bodtxt);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px; 
+    color: black;
+    text-decoration: none;
+}
+.navbtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 34.8px;
+    margin: auto;
+}
+
+.btn{
+    font-family: var(--bodtxt);
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    background: #2A5BD7;
+    padding: 10px 26px 10px 26px;
+    text-decoration: none;
+    border: 0;
+    font-weight: 700;
+    display: block;
+    margin: auto;
+}
+
+.btn:hover {
+    text-decoration: none;
+}  
+
+.title{
+    background-color: var(--basecolor);
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    padding-top: 43px;
+    height: 600px;
+}
+
+.btm, .btmlinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btmlinks{
+    justify-content: center;
+    gap: 100px;
+}
+
+.sup, .links{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footlink{
+    display: inline;
+
+}
+.btmtxt{
+    width: 445px;
+}
+
+
+.logo{
+    width: 102px;
+    height: 50px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.htxt{
+    font-family: var(--blink);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin: 0px auto 72px;
+    color: #152d6c;
+}
+
+.pxt{
+    width: 706px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    margin: 24px auto 0px;
+}
+
+.team{
+    display: grid; 
+    grid-template-columns: 250px 250px 250px; 
+    grid-template-rows: 333px 333px 333px 333px 333px 333px 333px 333px; 
+    gap: 72px 110px; 
+    grid-template-areas: 
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . ."
+        ". . .";
+}
+
+.bodx{
+    width: fit-content;
+    margin: 64px auto 140px;
+}
+
+
+
+@media  only screen and (max-width: 500px){
+    nav{
+        z-index: 10;
+        width: 90%;
+        gap: 0px;
+        padding: 0px 24px;
+        justify-content: space-between;
+    }
+    .navbtns{
+        display: none;
+    }
+    .mnu, .m{
+        display: block;
+    }
+    .mnubtns{
+        display: flex;
+        flex-direction: column;
+    }
+    #x{
+        margin-left: 93%;
+    }
+    .y{
+        margin: 34px auto;
+    }
+    #mbx{
+        position: fixed;
+        background-color: #ffffff;
+        padding: 35px 45px 70px;
+        top: 0px;
+        z-index: 15;
+        width: 83%;
+    }
+    footer{
+        padding: 32px 38px 10px;
+        flex-direction: column;
+    }
+    .btm{
+        flex-direction: column;
+    }
+    .btmlinks{
+        flex-direction: row;
+    }
+
+    .btmtxt{
+        width: auto;
+    }
+    .logo{
+        display: block;
+        margin: 0 auto;
+    }
+
+
+
+    .pic{
+        width: 100px;
+        height: 100px;
+    }
+    .bodx{
+        margin-bottom: 10px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+    .w{
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    h3, h5{
+        font-size: 14px;
+    }
+    p, .jd{
+        font-size: 12px;
+    }
+    .name{
+        margin: 16px auto 0px ;
+    }
+    .team{
+        grid-template-columns: 108px 108px; 
+        grid-template-rows: 153px 153px 153px 153px 153px 153px 153px 153px 153px 153px 153px 153px 153px ; 
+        gap: 47px 32px; 
+        grid-template-areas: 
+            ". ."
+            ". ."
+            ". ."
+            ". ."
+            ". ."
+            ". ."
+            ". ."
+            ". ."
+            ". ."
+            ". ."
+            ". ."
+            ". .";
+    }
+    .title{
+        padding: 45px 38px 34px;
+        height: auto;
+    }
+    .pxt{
+        width: auto;
+        color: #ffffff;
+    }
+}
