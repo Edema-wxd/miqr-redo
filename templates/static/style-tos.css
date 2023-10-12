@@ -1,207 +1,211 @@
-:root{
-    --bodtxt: 'Manrope', sans-serif;
-    --blink:  'Blinker', sans-serif;
-    --basecolor: #2A5BD7;
-    --basecanva: #ffffff;
+:root {
+  --bodtxt: "Manrope", sans-serif;
+  --blink: "Blinker", sans-serif;
+  --basecolor: #2a5bd7;
+  --basecanva: #ffffff;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-h3, p{
-    font-family: var(--bodtxt);
+h3,
+p {
+  font-family: var(--bodtxt);
 }
-header{
-    height: 100px;
-}
-
-h3{
-    font-size: 24px;
-    color: #152d6c;
-}
-nav{
-    position: fixed;
-    top: 0px;
-    background-color: var(--basecanva);
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 492px;
-    padding: 0px 123px;
-    border-width: 1px;
-    border-color:  #2A5BD75E;
-    border-style: groove;
-
-}
-.mnu, #mbx, .m{
-    display: none;
+header {
+  height: 100px;
 }
 
-h1{
-    font-size: 30px;
-    color: #ffffff;
-    margin: auto;
-    display: block;
-    width: fit-content;
-    position: relative;
-    top: 50%;
+h3 {
+  font-size: 24px;
+  color: #152d6c;
 }
-footer{
-    height: 400px;
-    padding: 98px 129px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+nav {
+  position: fixed;
+  top: 0px;
+  background-color: var(--basecanva);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 492px;
+  padding: 0px 123px;
+  border-width: 1px;
+  border-color: #2a5bd75e;
+  border-style: groove;
 }
-
-.title{
-    background-color: var(--basecolor);
-    font-weight: 400;
-    font-family: var(--blink);
-    height: 260px;
-    text-align: center;
-}
-
-
-
-.navlink{
-    font-family: var(--bodtxt);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19px; 
-    color: black;
-    text-decoration: none;
-}
-.navbtns{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 34.8px;
-    margin: auto;
+.mnu,
+#mbx,
+.m {
+  display: none;
 }
 
-.btn{
-    font-family: var(--bodtxt);
-    border-radius: 10px;
-    color: #ffffff;
-    font-size: 14px;
-    background: #2A5BD7;
-    padding: 10px 26px 10px 26px;
-    text-decoration: none;
-    border: 0;
-    font-weight: 700;
+h1 {
+  font-size: 30px;
+  color: #ffffff;
+  margin: auto;
+  display: block;
+  width: fit-content;
+  position: relative;
+  top: 50%;
+}
+footer {
+  height: 400px;
+  padding: 98px 129px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  background-color: var(--basecolor);
+  font-weight: 400;
+  font-family: var(--blink);
+  height: 260px;
+  text-align: center;
+}
+
+.navlink {
+  font-family: var(--bodtxt);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: black;
+  text-decoration: none;
+}
+.navbtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 34.8px;
+  margin: auto;
+}
+
+.btn {
+  font-family: var(--bodtxt);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 14px;
+  background: #2a5bd7;
+  padding: 10px 26px 10px 26px;
+  text-decoration: none;
+  border: 0;
+  font-weight: 700;
 }
 
 .btn:hover {
-    text-decoration: none;
-}  
+  text-decoration: none;
+}
 
+.btm,
+.btmlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-.btm, .btmlinks{
-    display: flex;
-    flex-direction: row;
+.btmlinks {
+  justify-content: center;
+  gap: 100px;
+}
+
+.sup,
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footlink {
+  display: inline;
+}
+.btmtxt {
+  width: 445px;
+}
+.contenttxt {
+  margin: 92px 280px;
+}
+
+.logo {
+  width: 102px;
+  height: 50px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.hero {
+  background-color: #2a5bd7;
+  background-image: "./world.png";
+  height: 100vh;
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    z-index: 10;
+    width: 90%;
+    gap: 0px;
+    padding: 0px 24px;
     justify-content: space-between;
-}
-
-.btmlinks{
-    justify-content: center;
-    gap: 100px;
-}
-
-.sup, .links{
+  }
+  .navbtns {
+    display: none;
+  }
+  .mnu,
+  .m {
+    display: block;
+  }
+  .mnubtns {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-}
+  }
+  #x {
+    margin-left: 93%;
+  }
+  .y {
+    margin: 34px auto;
+  }
+  #mbx {
+    position: fixed;
+    background-color: #ffffff;
+    padding: 35px 45px 70px;
+    top: 0px;
+    z-index: 15;
+    width: 83%;
+  }
+  footer {
+    padding: 32px 38px 10px;
+    flex-direction: column;
+  }
+  .btm {
+    flex-direction: column;
+  }
+  .btmlinks {
+    flex-direction: row;
+  }
 
-.footlink{
-    display: inline;
+  .btmtxt {
+    width: auto;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+  .contenttxt {
+    margin: 30px;
+    font-size: 14px;
+  }
+  .title {
+    height: 150px;
+  }
 
-}
-.btmtxt{
-    width: 445px;
-}
-.contenttxt{
-    margin: 92px 280px;
-}
-
-.logo{
-    width: 102px;
-    height: 50px;
-}
-
-.copyright{
-    text-align: center;
-}
-
-
-@media  only screen and (max-width: 500px){
-    nav{
-        z-index: 10;
-        width: 90%;
-        gap: 0px;
-        padding: 0px 24px;
-        justify-content: space-between;
-    }
-    .navbtns{
-        display: none;
-    }
-    .mnu, .m{
-        display: block;
-    }
-    .mnubtns{
-        display: flex;
-        flex-direction: column;
-    }
-    #x{
-        margin-left: 93%;
-    }
-    .y{
-        margin: 34px auto;
-    }
-    #mbx{
-        position: fixed;
-        background-color: #ffffff;
-        padding: 35px 45px 70px;
-        top: 0px;
-        z-index: 15;
-        width: 83%;
-    }
-    footer{
-        padding: 32px 38px 10px;
-        flex-direction: column;
-    }
-    .btm{
-        flex-direction: column;
-    }
-    .btmlinks{
-        flex-direction: row;
-    }
-
-    .btmtxt{
-        width: auto;
-    }
-    .logo{
-        display: block;
-        margin: 0 auto;
-    }
-    .contenttxt{
-        margin: 30px;
-        font-size: 14px;
-    }
-    .title{
-        height: 150px;
-    }
-
-    h1{
-        font-size: 24px;
-        top: 40%;
-    }
-
-
+  h1 {
+    font-size: 24px;
+    top: 40%;
+  }
 }
