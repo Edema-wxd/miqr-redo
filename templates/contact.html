@@ -1,105 +1,135 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@400;700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./static/style-faq.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/style-faq.css" />
     <title>Contact us</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="">
-                <img src="./static/logo.png" alt="MiQR Logo" class="logo">
-            </a>
-            
-            <div class="navbtns">
-                <a href="" class="navlink">Home</a>
-                <a href="" class="navlink">About</a>
-                <a href="" class="navlink">Contact</a>
-                <a href="" class="navlink">FAQ</a>
-                <a href="" class="navlink">Login</a>
-                <button class="btn reg" >Register</button>
-            </div>
-            <img class="m" onclick="menu()" src="./static/align-justify.png" alt="">
-            
-            <script>
-                function menu() {
-                    document.getElementById('mbx').style.display = 'block';
-                }
-            </script>
-        </nav>
+      <nav>
+        <a href="">
+          <img src="./static/logo.png" alt="MiQR Logo" class="logo" />
+        </a>
+
+        <div class="navbtns">
+          <a href="" class="navlink">Home</a>
+          <a href="" class="navlink">About</a>
+          <a href="" class="navlink">Contact</a>
+          <a href="" class="navlink">FAQ</a>
+          <a href="" class="navlink">Login</a>
+          <button class="btn reg">Register</button>
+        </div>
+        <img
+          class="m"
+          onclick="menu()"
+          src="./static/align-justify.png"
+          alt=""
+        />
+
+        <script>
+          function menu() {
+            document.getElementById("mbx").style.display = "block";
+          }
+        </script>
+      </nav>
     </header>
     <div id="mbx">
-        <img onclick='xmenu()' id='x' src="./static/x.png" alt="">
-        <div class="mnubtns">
-            <a href="" class="navlink y">Home</a>
-            <a href="" class="navlink y">About</a>
-            <a href="" class="navlink y">Contact</a>
-            <a href="" class="navlink y">FAQ</a>
-            <a href="" class="navlink y">Login</a>
-            <button class="btn reg" >Register</button>
-        </div>
-        <script>
-            function xmenu() {
-                document.getElementById('mbx').style.display = 'none';
-            }
-        </script>
+      <img onclick="xmenu()" id="x" src="./static/x.png" alt="" />
+      <div class="mnubtns">
+        <a href="" class="navlink y">Home</a>
+        <a href="" class="navlink y">About</a>
+        <a href="" class="navlink y">Contact</a>
+        <a href="" class="navlink y">FAQ</a>
+        <a href="" class="navlink y">Login</a>
+        <button class="btn reg">Register</button>
+      </div>
+      <script>
+        function xmenu() {
+          document.getElementById("mbx").style.display = "none";
+        }
+      </script>
     </div>
 
     <main>
-        <div class="title tact">
-            <h1 id="contact">
-                Contact us
-            </h1>
-        </div>
-        
-        <div class="cont">
-            <h3 class="htxt">We are here to help</h3>
-            <p class="ptxt">Send us a message.</p>
-            <form class="cont-form"  method="POST" action=""  target="_self">
-                <input class='frmbx' type="text" id="text" name="name" placeholder="Name" required><br>
-                <input class='frmbx x' type="email" id="text" name="text" placeholder="Email Address" required><br>
-                <label class='mtxt' for="message">Message</label><br>
-                <textarea class='frmbx txb' name='message' id="messagetxt" name="textarea" rows="3" cols="50" required></textarea><br>
-                <button type="submit" class="btn reg">Submit</button>
-            </form>
-        </div>
+      <div class="title tact">
+        <h1 id="contact">Contact us</h1>
+      </div>
+
+      <div class="cont">
+        <h3 class="htxt">We are here to help</h3>
+        <p class="ptxt">Send us a message.</p>
+        <form class="cont-form" method="POST" action="" target="_self">
+          <input
+            class="frmbx"
+            type="text"
+            id="text"
+            name="name"
+            placeholder="Name"
+            required
+          /><br />
+          <input
+            class="frmbx x"
+            type="email"
+            id="text"
+            name="text"
+            placeholder="Email Address"
+            required
+          /><br />
+          <label class="mtxt" for="message">Message</label><br />
+          <textarea
+            class="frmbx txb"
+            name="message"
+            id="messagetxt"
+            name="textarea"
+            rows="3"
+            cols="50"
+            required
+          ></textarea
+          ><br />
+          <button type="submit" class="btn reg">Submit</button>
+        </form>
+      </div>
     </main>
 
     <footer>
-        <div class="btm">
-            <div class="btmtxt">
-                <img src="./static/logo.png" alt="MiQR Logo" class="logo">
-                <p >
-                    Generates different QR codes.Depending on your purpose, you  can use our  QR generator to create QR codes to open a website, Store image files, View PDF files, connect to a wifi and more
-                </p>
-            </div>
-            <div class="btmlinks">
-                <div class="links">
-                    <h3>Useful links</h3>
-                    <a href="" class="navlink footlink">About us</a>
-                    <a href="" class="navlink footlink">Terms of Service</a>
-                    <a href="" class="navlink footlink">Privacy Policy</a>
-                </div>
-                <div class="sup">
-                    <h3>Support</h3>
-                    <a href="" class="navlink footlink">Contact us</a>
-                    <a href="" class="navlink footlink">FAQ</a>                    
-                </div>
-            </div>
+      <div class="btm">
+        <div class="btmtxt">
+          <img src="./static/logo.png" alt="MiQR Logo" class="logo" />
+          <p>
+            Generates different QR codes.Depending on your purpose, you can use
+            our QR generator to create QR codes to open a website, Store image
+            files, View PDF files, connect to a wifi and more
+          </p>
         </div>
-        <p class="copyright">
-            copyright @ 2022 MiQR
-        </p>
+        <div class="btmlinks">
+          <div class="links">
+            <h3>Useful links</h3>
+            <a href="" class="navlink footlink">About us</a>
+            <a href="" class="navlink footlink">Terms of Service</a>
+            <a href="" class="navlink footlink">Privacy Policy</a>
+          </div>
+          <div class="sup">
+            <h3>Support</h3>
+            <a href="" class="navlink footlink">Contact us</a>
+            <a href="" class="navlink footlink">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">copyright @ 2022 MiQR</p>
     </footer>
-    
-</body>
+  </body>
 </html>

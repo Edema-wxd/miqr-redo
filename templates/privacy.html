@@ -1,95 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@400;700&display=swap" rel="stylesheet">      
-    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./static/style-tos.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/style-tos.css" />
     <title>Privacy Policy</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="">
-                <img src="./static/logo.png" alt="MiQR Logo" class="logo">
-            </a>
-            
-            <div class="navbtns">
-                <a href="" class="navlink">Home</a>
-                <a href="" class="navlink">About</a>
-                <a href="" class="navlink">Contact</a>
-                <a href="" class="navlink">FAQ</a>
-                <a href="" class="navlink">Login</a>
-                <button class="btn reg" >Register</button>
-            </div>
-            <img class="m" onclick="menu()" src="./static/align-justify.png" alt="">
-            
-            <script>
-                function menu() {
-                    document.getElementById('mbx').style.display = 'block';
-                }
-            </script>
-        </nav>
+      <nav>
+        <a href="">
+          <img src="./static/logo.png" alt="MiQR Logo" class="logo" />
+        </a>
+
+        <div class="navbtns">
+          <a href="" class="navlink">Home</a>
+          <a href="" class="navlink">About</a>
+          <a href="" class="navlink">Contact</a>
+          <a href="" class="navlink">FAQ</a>
+          <a href="" class="navlink">Login</a>
+          <button class="btn reg">Register</button>
+        </div>
+        <img
+          class="m"
+          onclick="menu()"
+          src="./static/align-justify.png"
+          alt=""
+        />
+
+        <script>
+          function menu() {
+            document.getElementById("mbx").style.display = "block";
+          }
+        </script>
+      </nav>
     </header>
     <div id="mbx">
-        <img onclick='xmenu()' id='x' src="./static/x.png" alt="">
-        <div class="mnubtns">
-            <a href="" class="navlink y">Home</a>
-            <a href="" class="navlink y">About</a>
-            <a href="" class="navlink y">Contact</a>
-            <a href="" class="navlink y">FAQ</a>
-            <a href="" class="navlink y">Login</a>
-            <button class="btn reg" >Register</button>
-        </div>
-        <script>
-            function xmenu() {
-                document.getElementById('mbx').style.display = 'none';
-            }
-        </script>
+      <img onclick="xmenu()" id="x" src="./static/x.png" alt="" />
+      <div class="mnubtns">
+        <a href="" class="navlink y">Home</a>
+        <a href="" class="navlink y">About</a>
+        <a href="" class="navlink y">Contact</a>
+        <a href="" class="navlink y">FAQ</a>
+        <a href="" class="navlink y">Login</a>
+        <button class="btn reg">Register</button>
+      </div>
+      <script>
+        function xmenu() {
+          document.getElementById("mbx").style.display = "none";
+        }
+      </script>
     </div>
     <main>
-        <div class="title">
-            <h1>Privacy Policy</h1>
-        </div>
-        <div class="content">
-            <p class="contenttxt">
-                The QR codes generated with our API and/or this QR code generator are delivered without any kind of tracking mechanism. This means we dont capture any data of users scanning QR codes created. The QR codes generated here contain exactly the data you entered(indeed, there are some shady providers on the net who try to store hidden redirects via their servers and change you after some time or the redirection will be switched-off). Because our QR code generator encodes the exact data into the QR graphic, the created QR codes are also getting larger and form a more complex pattern if there is more data to store. 
-                The QR code image/symbol will be deleted- 30 seconds after delivery from the cache and is not permanently stored. Additionally, our on webservers logfiles are storing some data about the request(namely Broswer type and version, operating stystem, etc.- all of this data has nothing to do with the QR code contents!) Another important detail that should be noted, because our systems are not involved when the QR code gets scanned the codes cannot “expire”(also refer to FAQ entry for more information)
-            </p>
-        </div>
+      <div class="title">
+        <h1>Privacy Policy</h1>
+      </div>
+      <div class="content">
+        <p class="contenttxt">
+          The QR codes generated with our API and/or this QR code generator are
+          delivered without any kind of tracking mechanism. This means we dont
+          capture any data of users scanning QR codes created. The QR codes
+          generated here contain exactly the data you entered(indeed, there are
+          some shady providers on the net who try to store hidden redirects via
+          their servers and change you after some time or the redirection will
+          be switched-off). Because our QR code generator encodes the exact data
+          into the QR graphic, the created QR codes are also getting larger and
+          form a more complex pattern if there is more data to store. The QR
+          code image/symbol will be deleted- 30 seconds after delivery from the
+          cache and is not permanently stored. Additionally, our on webservers
+          logfiles are storing some data about the request(namely Broswer type
+          and version, operating stystem, etc.- all of this data has nothing to
+          do with the QR code contents!) Another important detail that should be
+          noted, because our systems are not involved when the QR code gets
+          scanned the codes cannot “expire”(also refer to FAQ entry for more
+          information)
+        </p>
+      </div>
     </main>
 
     <footer>
-        <div class="btm">
-            <div class="btmtxt">
-                <img src="./static/logo.png" alt="MiQR Logo" class="logo">
-                <p >
-                    Generates different QR codes.Depending on your purpose, you  can use our  QR generator to create QR codes to open a website, Store image files, View PDF files, connect to a wifi and more
-                </p>
-            </div>
-            <div class="btmlinks">
-                <div class="links">
-                    <h3>Useful links</h3>
-                    <a href="" class="navlink footlink">About us</a>
-                    <a href="" class="navlink footlink">Terms of Service</a>
-                    <a href="" class="navlink footlink">Privacy Policy</a>
-                </div>
-                <div class="sup">
-                    <h3>Support</h3>
-                    <a href="" class="navlink footlink">Contact us</a>
-                    <a href="" class="navlink footlink">FAQ</a>                    
-                </div>
-            </div>
+      <div class="btm">
+        <div class="btmtxt">
+          <img src="./static/logo.png" alt="MiQR Logo" class="logo" />
+          <p>
+            Generates different QR codes.Depending on your purpose, you can use
+            our QR generator to create QR codes to open a website, Store image
+            files, View PDF files, connect to a wifi and more
+          </p>
         </div>
-        <p class="copyright">
-            copyright @ 2022 MiQR
-        </p>
+        <div class="btmlinks">
+          <div class="links">
+            <h3>Useful links</h3>
+            <a href="" class="navlink footlink">About us</a>
+            <a href="" class="navlink footlink">Terms of Service</a>
+            <a href="" class="navlink footlink">Privacy Policy</a>
+          </div>
+          <div class="sup">
+            <h3>Support</h3>
+            <a href="" class="navlink footlink">Contact us</a>
+            <a href="" class="navlink footlink">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">copyright @ 2022 MiQR</p>
     </footer>
-    
-</body>
+  </body>
 </html>
