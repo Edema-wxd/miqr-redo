@@ -1,5 +1,5 @@
 # miqr-redo
-
+[Home](https://edema-wxd.github.io/miqr-redo/templates/home.html)
 
 [About us](https://edema-wxd.github.io/miqr-redo/templates/about.html)
 
